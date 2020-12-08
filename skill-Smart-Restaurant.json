@@ -1,0 +1,780 @@
+{
+  "intents": [
+    {
+      "intent": "desserts",
+      "examples": [
+        {
+          "text": "i wish to place a new order"
+        },
+        {
+          "text": "i wish to place another order"
+        },
+        {
+          "text": "i wish to place new order"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "any offers available ?"
+        },
+        {
+          "text": "can you please get the menu card !!"
+        },
+        {
+          "text": "let me know the discounts available ?"
+        },
+        {
+          "text": "what are available today"
+        },
+        {
+          "text": "what are available today ?"
+        },
+        {
+          "text": "what is the menu today ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "final",
+      "examples": [
+        {
+          "text": "thank you for your support that's it we are done with the order"
+        },
+        {
+          "text": "that's it for today"
+        },
+        {
+          "text": "we are done with the order"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "have a pleasant morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "Hello!"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "It’s a pleasure to meet you in our restaurant"
+        },
+        {
+          "text": "It’s nice to meet you in our restaurant"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "order",
+      "examples": [
+        {
+          "text": "please place my order"
+        },
+        {
+          "text": "please take my order"
+        },
+        {
+          "text": "take my order"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "status",
+      "examples": [
+        {
+          "text": "having"
+        },
+        {
+          "text": "i would like to have a having order"
+        },
+        {
+          "text": "i would like to have a take away order"
+        },
+        {
+          "text": "take away"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "desserts",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Almond Malai Kulfi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Apple Pie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chocolate Coffee Truffle",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Coconut Kheer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fudgy Chewy Brownies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lemon Tart",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Low Fat Tiramisu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pistachio Phirni",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "menu",
+          "synonyms": [
+            "food items"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "offers",
+          "synonyms": [
+            "discount"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "food_items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "briyani",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "burger",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chicken",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ice cream",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "milkshake",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mutton chukka",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pizza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sandwich",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "ge",
+            "gud even"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gm",
+            "gud morn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good noon",
+          "synonyms": [
+            "g-noon",
+            "gud noon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hello",
+          "synonyms": [
+            "hai",
+            "hellow",
+            "hey"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1607008300641",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "and can you please enter the quantity"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1606981955273",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1606981955274",
+      "previous_sibling": "handler_6_1606981955274"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1607007339815",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_10_1607007339816"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "sure, please enter the food item name you want to order"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1606981776685",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1606981776712",
+      "previous_sibling": "handler_2_1606981776712"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1607007277647",
+      "context": {
+        "desserts": "@desserts"
+      },
+      "conditions": "@desserts",
+      "event_name": "input",
+      "dialog_node": "handler_1_1607007277676"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1606981776685",
+      "context": {
+        "food_items": "@food_items"
+      },
+      "conditions": "@food_items",
+      "event_name": "input",
+      "dialog_node": "handler_2_1606981776712"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "and can you please enter the quantity"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1607007339815",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1607007339816",
+      "previous_sibling": "handler_10_1607007339816"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "sure, please enter the dessert item name you want to order"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1607007277647",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1607007277676",
+      "previous_sibling": "handler_1_1607007277676"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1606981955273",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1606981955274"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "dialog_node": "node_2_1606979967269",
+      "previous_sibling": "node_3_1607004384827"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "it was pleasant to help you ,do u wish to have a look at the  menu card"
+              },
+              {
+                "text": "i will be there to help you ,do u wish to have a look at the  menu card"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#status",
+      "dialog_node": "node_3_1607004384827",
+      "previous_sibling": "node_6_1606975761401"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your order for $food_items with the quantity $number is placed successfully  and you will receive your order in 10 min do u wish to have any soft drinks , soup  any thing else "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#order",
+      "dialog_node": "node_4_1606981694408",
+      "previous_sibling": "node_2_1606979967269"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "your order for $desserts with the quantity $number is placed successfully  and you will receive your order in in a short while which is under preparation"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#desserts",
+      "dialog_node": "node_5_1607005644918",
+      "previous_sibling": "node_4_1606981694408"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_6_1606975761401",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "happy to know u will receive your orders in 5 min thanks for visiting us have a nice day we are here to help you at anytime  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#final",
+      "dialog_node": "node_7_1607008300641",
+      "previous_sibling": "node_5_1607005644918"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "deleted": "<?context.remove('food_items')?><?context.remove('number')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1606981694408",
+      "conditions": "true",
+      "dialog_node": "node_8_1606982587692"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "deleted": "<?context.remove('desserts')?><?context.remove('number')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1607005644918",
+      "conditions": "true",
+      "dialog_node": "node_8_1607161385699"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "have a pleasant noon and welcome to our restaurant how can i help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606975761401",
+      "conditions": "@Greetings:(good noon)",
+      "dialog_node": "response_1_1607003978055",
+      "previous_sibling": "response_2_1607003945652"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "have a pleasant evening and welcome to our restaurant how can i help you "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606975761401",
+      "conditions": "@Greetings:(good evening)",
+      "dialog_node": "response_2_1607003945652",
+      "previous_sibling": "response_7_1606978269588"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Menu card",
+            "source": "https://i.ytimg.com/vi/s7EkhmP5vA8/maxresdefault.jpg",
+            "description": "all the items in the menu card are available",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1606979967269",
+      "conditions": "@Enquiry:menu",
+      "dialog_node": "response_3_1606980164207"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1607005644918",
+      "disabled": true,
+      "conditions": "@desserts",
+      "dialog_node": "response_3_1607007193430",
+      "previous_sibling": "slot_5_1607007339815"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "have a pleasant morning and welcome to our restaurant how can i help you "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606975761401",
+      "conditions": "@Greetings:(good morning)",
+      "dialog_node": "response_7_1606978269588"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "50 percentage offer"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1606979967269",
+      "conditions": "@Enquiry:offers",
+      "dialog_node": "response_8_1606980256134",
+      "previous_sibling": "response_3_1606980164207"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hello !! and welcome to our restaurant how can i help you "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1606975761401",
+      "conditions": "@Greetings:hello",
+      "dialog_node": "response_9_1607004008392",
+      "previous_sibling": "response_1_1607003978055"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1606981694408",
+      "variable": "$food_items",
+      "dialog_node": "slot_1_1606981776685",
+      "previous_sibling": "node_8_1606982587692"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1607005644918",
+      "variable": "$number",
+      "dialog_node": "slot_5_1607007339815",
+      "previous_sibling": "slot_8_1607007277647"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1606981694408",
+      "variable": "$number",
+      "dialog_node": "slot_7_1606981955273",
+      "previous_sibling": "slot_1_1606981776685"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1607005644918",
+      "variable": "$desserts",
+      "dialog_node": "slot_8_1607007277647",
+      "previous_sibling": "node_8_1607161385699"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "welcome to our restaurant ...am sweety i am a restaurant bot i am here to   take care of your visit  can you please tell me how can i help u "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Smart Restaurant",
+  "language": "en",
+  "description": "Smart Restaurant Bot"
+}
