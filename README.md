@@ -1,2 +1,2 @@
 # smart-restaurent-bot-
-chat bot
+chatbot
